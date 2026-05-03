@@ -1,0 +1,51 @@
+# Scanner Configuration
+scanner:
+  discount_threshold: 0.80  # 80% of original price (20% discount minimum)
+  check_interval: 3600  # Run every hour (in seconds)
+  timeout: 30
+  max_retries: 3
+  
+marketplaces:
+  amazon_india:
+    enabled: true
+    url: "https://www.amazon.in"
+    timeout: 30
+  
+  flipkart:
+    enabled: true
+    url: "https://www.flipkart.com"
+    timeout: 30
+  
+  myntra:
+    enabled: true
+    url: "https://www.myntra.com"
+    timeout: 30
+  
+  ajio:
+    enabled: true
+    url: "https://www.ajio.com"
+    timeout: 30
+  
+  nykaa:
+    enabled: true
+    url: "https://www.nykaa.com"
+    timeout: 30
+  
+  croma:
+    enabled: true
+    url: "https://www.croma.com"
+    timeout: 30
+  
+  meesho:
+    enabled: true
+    url: "https://www.meesho.com"
+    timeout: 30
+
+output:
+  csv_enabled: true
+  json_enabled: true
+  output_dir: "./output"
+  
+logging:
+  level: "INFO"
+  log_file: "./logs/scanner.log"
